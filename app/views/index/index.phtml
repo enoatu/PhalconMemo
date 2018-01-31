@@ -1,0 +1,31 @@
+<div class="page-header">
+   this is.. <h1>PhalconMemo!</h1>
+</div>
+
+<p>This page is located at <code>views/index/index.phtml</code></p>
+
+
+<?php echo $this->tag->form("signup/register"); ?>
+
+    <p>
+            <label for="name">
+                        Name
+                                </label>
+
+        <?php echo $this->tag->textField("name"); ?>
+            </p>
+
+    <p>
+            <label for="email">
+                        E-Mail
+                                </label>
+
+        <?php echo $this->tag->textField("email"); ?>
+            </p>
+
+
+
+    <p>
+            <?php echo $this->tag->submitButton("Register"); ?>
+                </p>
+
